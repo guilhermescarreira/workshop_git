@@ -3,6 +3,13 @@ def add(n1, n2):
 
 def sub(n1, n2):
     return n1 - n2
+  
+def mul(n1, n2):
+    return n1 * n2
+
+def div(n1, n2):
+    if n2 != 0:
+      return n1 / n2
 
 def calculadora_simples():
     print("------------------------------")
@@ -16,7 +23,9 @@ def calculadora_simples():
     elif operador == '-':
         resultado = sub(numero1, numero2)
     elif operador == '*':
-        resultado = numero1 * numero2
+        resultado = mul(numero1, numero2)
+    elif operador == '/':
+        resultado = div(numero1, numero2)
     else:
         print("Operador inválido.")
         return
