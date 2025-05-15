@@ -15,6 +15,8 @@ def calculadora_simples():
         resultado = add(numero1, numero2)
     elif operador == '-':
         resultado = sub(numero1, numero2)
+    elif operador == '*':
+        resultado = numero1 * numero2
     else:
         print("Operador inválido.")
         return
