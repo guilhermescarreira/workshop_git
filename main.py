@@ -1,6 +1,8 @@
 def add(n1, n2):
     return n1 + n2
 
+def sub(n1, n2):
+    return n1 - n2
 
 def calculadora_simples():
     print("------------------------------")
@@ -11,6 +13,8 @@ def calculadora_simples():
 
     if operador == '+':
         resultado = add(numero1, numero2)
+    elif operador == '-':
+        resultado = sub(numero1, numero2)
     else:
         print("Operador inválido.")
         return
